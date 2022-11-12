@@ -34,7 +34,7 @@ export default function App() {
   }
 
   //Deleting an article
-  const deleteArticle = document.querySelector('.delete')
+  /*const deleteArticle = document.querySelector('.delete')
   deleteArticle.addEventListener('submit', (e) => {
     e.preventDefault()
     const docRef = doc(db, 'articles', deleteArticle.id)
@@ -42,14 +42,13 @@ export default function App() {
       .then(() => {
         deleteArticle.remove()
       })
-  })
+  })*/
 
   return (
     <div className="App">
       <header>
         Blog
         {user && <button onClick={() => setWriting(true)}>New Article</button>}
-        {user && <button onClick={() => deleteArticle()}>Delete Article</button>}
         {!user ? <SignIn /> : <SignOut />}
       </header>
 

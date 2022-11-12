@@ -1,7 +1,5 @@
-# A Blog Starter App
+Created By: Lawrence Benitez and Maria Dominguez
 
-This is a trivial blog app, started with create-react-app.
+Link: https://blog-8c003.web.app/
 
-It works entirely within memory, so reloads blow everything away except for the first two mock articles.
-
-This repo is designed for you to fork and extend with (1) better CSS and (2) a real back end, with authentication and a database.
+Project Description: For this project, we used the Firebase console to create our blog which allows users to sign in and create articles. By using Javascript, we were able to add buttons for signing in and writing posts. We also edited the security rules to make website less vulnerable. The CSS was styled to improve the look of the website.
