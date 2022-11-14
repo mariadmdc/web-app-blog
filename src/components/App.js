@@ -33,27 +33,17 @@ export default function App() {
     })
   }
 
-  //Deleting an article
-  /*const deleteArticle = document.querySelector('.delete')
-  deleteArticle.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const docRef = doc(db, 'articles', deleteArticle.id)
-    deleteDoc(docRef)
-      .then(() => {
-        deleteArticle.remove()
-      })
-  })*/
-
   return (
     <div className="App">
       <header>
-        Blog
+        A Day In My Life
         {user && <button onClick={() => setWriting(true)}>New Article</button>}
         {!user ? <SignIn /> : <SignOut />}
       </header>
-
+      <sideBar>
       {!user ? "" : <Nav articles={articles} setArticle={setArticle} />}
-
+      </sideBar>
+      <mainArticle>
       {!user ? (
         ""
       ) : writing ? (
@@ -61,6 +51,7 @@ export default function App() {
       ) : (
         <Article article={article} />
       )}
+      </mainArticle>
     </div>
   )
 }

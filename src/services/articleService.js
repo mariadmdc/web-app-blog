@@ -11,9 +11,6 @@ export async function createArticle({ title, body }) {
   return { id: docRef.id, ...data }
 }
 
-export async function deleteArticle( id ) {
-  
-}
 // NOT FINISHED: This only gets the first 20 articles. In a real app,
 // you implement pagination.
 export async function fetchArticles() {
